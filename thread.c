@@ -5,9 +5,6 @@
 
 int main()
 {
-	printf("Hello");
-	printf(" Timestamp: %s\n",time_stamp());
-
 	int i=fork();
 
 	if(!i)
