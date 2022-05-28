@@ -5,6 +5,12 @@
 
 int main()
 {
+	int main(void)
+	{
+    		printf("My pid:%d\n", getpid());
+		return 0;
+	}
+
 	int i=fork();
 
 	if(!i)
