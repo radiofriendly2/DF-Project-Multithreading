@@ -9,7 +9,7 @@ int main()
 
 	if(!i)
 	{
-		execlp("sudo", "python", "python", "script.py", (char*) NULL);
+		execlp("sudo", "python", "python", "script.py", "/dev/loop9", (char*) NULL);
 	}
 	
 	i=fork();
@@ -21,13 +21,13 @@ int main()
 	i=fork();
 	if(!i)
 	{
-		execlp("sudo", "python", "python", "script2.py", (char*) NULL);
+		execlp("sudo", "python", "python", "script2.py", "./file", "-r", "google", (char*) NULL);
 	}
 	
 	i=fork();
 	if(!i)
 	{
-		execlp("sudo", "python", "python", "script3.py", (char*) NULL);
+		execlp("sudo", "python", "python", "script3.py", ".file", "-r", "rule.yar", (char*) NULL);
 	}
 
 }
